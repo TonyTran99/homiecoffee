@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #00735C;
+}
+
+body {
+  color: white;
+  background: var(--background-color);
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Custom scrollbar hide if needed, but standard is fine */
