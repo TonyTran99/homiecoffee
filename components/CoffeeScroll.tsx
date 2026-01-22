@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, motion, useMotionValueEvent, MotionValue } from "framer-motion";
 
-const FRAME_COUNT = 128; // Based on the 128 frames found
+const FRAME_COUNT = 64; // Optimized for GitHub upload (64 frames)
 
 export default function CoffeeScroll() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -152,30 +152,30 @@ export default function CoffeeScroll() {
                     {/* 0% - 15% */}
                     <OverlaySection start={0} end={0.15} scrollYProgress={scrollYProgress} align="center">
                         <h2 className="text-6xl md:text-8xl font-serif text-white/90">HOMIE Coffee.</h2>
-                        <p className="text-xl md:text-2xl font-sans text-white/70 mt-4 uppercase tracking-widest">Pure Origin.</p>
+                        <p className="text-xl md:text-2xl font-sans text-white/70 mt-4 uppercase tracking-widest">Hương vị nguyên bản.</p>
                     </OverlaySection>
 
                     {/* 25% - 40% */}
                     <OverlaySection start={0.25} end={0.40} scrollYProgress={scrollYProgress} align="left">
                         <h3 className="text-4xl md:text-6xl font-serif text-white/90 max-w-xl">
-                            The journey begins with the <span className="text-[#FF6B6B]">cherry</span>.
+                            Hành trình bắt đầu từ những quả <span className="text-[#FF6B6B]">chín mọng</span>.
                         </h3>
                     </OverlaySection>
 
                     {/* 50% - 65% */}
                     <OverlaySection start={0.50} end={0.65} scrollYProgress={scrollYProgress} align="right">
                         <h3 className="text-4xl md:text-6xl font-serif text-white/80 max-w-xl text-right">
-                            Roasted for Depth.<br />
-                            <span className="text-white">Ground for Flavor.</span>
+                            Rang đậm sâu.<br />
+                            <span className="text-white">Xay trọn vị.</span>
                         </h3>
                     </OverlaySection>
 
                     {/* 80% - 100% */}
                     <OverlaySection start={0.80} end={0.98} scrollYProgress={scrollYProgress} align="center">
                         <div className="text-center">
-                            <h2 className="text-5xl md:text-7xl font-serif text-white mb-8">Made for the Homies.</h2>
-                            <a href="#" className="pointer-events-auto inline-block px-8 py-4 bg-white text-[#00735C] font-bold font-sans tracking-wide rounded-full hover:bg-opacity-90 transition-transform hover:scale-105">
-                                ORDER NOW
+                            <h2 className="text-5xl md:text-7xl font-serif text-white mb-8">Dành riêng cho Homies.</h2>
+                            <a href="tel:0908387238" className="pointer-events-auto inline-block px-8 py-4 bg-white text-[#00735C] font-bold font-sans tracking-wide rounded-full hover:bg-opacity-90 transition-transform hover:scale-105">
+                                GỌI ĐẶT NGAY: 0908 38 72 38
                             </a>
                         </div>
                     </OverlaySection>
